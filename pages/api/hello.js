@@ -1,5 +1,6 @@
 import { createCanvas } from 'canvas';
 
 export default (req, res) => {
-  res.status(200).json({ projectBuildsButFailsToRunOnVercel: true })
+  res.statusCode = 200
+  res.json({ name: 'Testing' })
 }

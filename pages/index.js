@@ -6,7 +6,7 @@ export default function Home(props) {
   )
 }
 
-export async function getServerSideProps() {
+export async function getServerSideProps(context) {
   
-  return { props: { message: "Hello cruel world" } }
+  return { props: { message: `Hello cruel world` }, }
 }
